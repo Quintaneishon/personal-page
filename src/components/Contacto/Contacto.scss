@@ -1,0 +1,17 @@
+.contact{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: grid;
+    border-radius: 3px;
+
+    &__icon{
+        padding-top: 1rem;
+        font-size: 5rem;
+    }
+
+    &:hover{
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    }
+}

@@ -1,0 +1,39 @@
+
+@import '../../mixins.scss';
+
+.left{
+    font-size: 2.2rem;
+    display: grid;
+    text-align: center;
+
+    &__foto{
+        width: 35rem;
+        padding-bottom: 2rem;
+        img{
+            width: 100%;
+            height: auto;
+            box-shadow: 0 1.5rem 2rem rgba(#000, 0.2);
+        }
+
+        @include respond(tab-ver){
+            width: 100%;
+        }
+       
+    }
+
+    &__nombre{
+        width: 100%;
+        padding-bottom: .5rem;
+    }
+
+    &__profesion{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    &__botons{
+        a:first-child{
+            margin-right: 3rem;
+        }
+    }
+}

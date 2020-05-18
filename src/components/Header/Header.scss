@@ -1,0 +1,62 @@
+@import '../../Variables.scss';
+@import '../../mixins.scss';
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-primary-dark;
+    position: fixed;
+    z-index: 10000;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    @include clearfix;
+
+    .head{
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+        
+        width: calc(((100% - 5 * #{$gutter-horizontal}) / 6));
+    }
+}
+
+.head{
+    text-align: center !important;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+    transition: all .25s;
+
+    @include respond(phone){
+        padding-top: 1rem
+    }
+
+    &__nombre{
+        width: 100%;
+        
+        @include respond(phone){
+            display: none;        
+        }
+    }
+
+    &__icon{
+        width: 100%;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: $color-secondary-light;
+        color: $color-primary-dark;
+
+        @include respond(phone){
+            background-color: $color-primary-dark;
+            color: $color-secondary-light;
+        }
+    }
+}

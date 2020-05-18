@@ -1,0 +1,9 @@
+@import '../../mixins.scss';
+
+#principal{
+    padding: 12rem 3rem 3rem 3rem;
+    
+    @include respond(phone){
+        padding: 9rem 3rem 3rem 3rem;
+    }
+}
